@@ -1,0 +1,163 @@
+# Portal Turístico Municipal - Especificación Técnica
+
+## 1. Overview del Proyecto
+
+- **Nombre**: PortalTuristico - Portal turístico municipal
+- **Tipo**: Aplicación web JAMstack con Next.js
+- **Funcionalidad**: Presentar destinos turísticos, eventos y gastronomía del municipio
+- **Usuario objetivo**: Turistas y visitantes del municipio
+
+## 2. UI/UX Specification
+
+### Layout Structure
+
+- **Header**: Logo + navegación principal (fijo)
+- **Hero Section**: Imagen de fondo con texto institucional
+- **Content Areas**: Grid de tarjetas para sitios/eventos
+- **Footer**: Información de contacto y redes sociales
+- **Responsive**: Mobile (<768px), Tablet (768-1024px), Desktop (>1024px)
+
+### Visual Design
+
+- **Paleta de colores**:
+  - Primary: `#1B4332` (Verde bosque oscuros)
+  - Secondary: `#40916C` (Verde naturaleza)
+  - Accent: `#D4A373` (Arena/terracota)
+  - Background: `#FEFAE0` (Crema claro)
+  - Text: `#2D3436` (Gris oscuro)
+  - White: `#FFFFFF`
+
+- **Tipografía**:
+  - Headings: "Playfair Display", serif
+  - Body: "Source Sans 3", sans-serif
+  - H1: 48px, H2: 36px, H3: 24px, Body: 16px
+
+- **Espaciado**: 8px base ( multiples: 16, 24, 32, 48, 64)
+
+- **Efectos**:
+  - Sombras: `0 4px 20px rgba(27, 67, 50, 0.1)`
+  - Transiciones: 0.3s ease
+  - Hover en tarjetas: translateY(-8px)
+
+### Componentes
+
+1. **Navbar**: Logo, links de navegación, botón contacto
+2. **Hero**: Imagen full-width, título animado
+3. **TouristSiteCard**: Imagen, nombre, descripción, categoría, ubicación
+4. **EventCard**: Fecha, título, ubicación, categoría
+5. **SearchBar**: Input con ícono, filtro por categoría
+6. **MapComponent**: Mapa Leaflet con marcadores
+7. **ContactForm**: Campos nombre, email, mensaje, botón enviar
+8. **Footer**: Links, redes sociales, copyright
+
+## 3. Functionality Specification
+
+### Páginas
+
+#### Página 1: Inicio (`/`)
+- Hero con información institucional del municipio
+- Estadísticas (población, extensión, atractivos)
+- Destacados del municipio
+- Testimonios de visitantes
+- Call-to-action hacia sitios turísticos
+
+#### Página 2: Sitios Turísticos (`/sitios`)
+- Listado de sitios desde API (JSON local simulado)
+- Buscador por nombre
+- Filtro por categoría (natural, cultural, histórico)
+- Pre-renderizado con getStaticProps/getStaticPaths
+- Integración con mapa Leaflet mostrando ubicación
+
+#### Página 3: Eventos y Gastronomía (`/eventos`)
+- Tablas/secciones para eventos y gastronomía
+- Datos dinámicos desde JSON
+- Cards para restaurantes/platos típicos
+- Calendario de eventos próximos
+- Pre-renderizado de categorías
+
+### API Simulada
+
+```json
+{
+  "sitios": [
+    { "id": 1, "nombre": "...", "descripcion": "...", "categoria": "natural|cultural|historico", "imagen": "...", "lat": ..., "lng": ... }
+  ],
+  "eventos": [
+    { "id": 1, "titulo": "...", "fecha": "...", "categoria": "...", "descripcion": "..." }
+  ],
+  "gastronomia": [
+    { "id": 1, "nombre": "...", "tipo": "restaurante|plato", "especialidad": "...", "direccion": "..." }
+  ]
+}
+```
+
+### Funcionalidades Extra
+
+- Buscador en tiempo real con filtro
+- Mapa interactivo con Leaflet
+- Formulario de contacto funcional
+- Animaciones suaves
+
+## 4. Technical Architecture
+
+### Stack Tecnológico
+
+- **Framework**: Next.js 14 (App Router)
+- **Estilos**: CSS Modules + CSS Variables
+- **Datos**: JSON local como API simulada
+- **Mapas**: Leaflet + react-leaflet
+- **Despliegue**: Vercel ready
+
+### Estructura de Carpetas
+
+```
+turismo/
+├── public/
+│   ├── data/
+│   │   ├── sitios.json
+│   │   ├── eventos.json
+│   │   └── gastronomia.json
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   ├── sitios/
+│   │   │   └── page.js
+│   │   ├── eventos/
+│   │   │   └── page.js
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Hero.js
+│   │   ├── Footer.js
+│   │   ├── TouristSiteCard.js
+│   │   ├── EventCard.js
+│   │   ├── SearchBar.js
+│   │   ├── MapComponent.js
+│   │   └── ContactForm.js
+│   └── lib/
+│       └── data.js
+├── package.json
+└── next.config.js
+```
+
+### JAMstack Justification
+
+1. **Static Generation**: getStaticProps genera HTML en build time
+2. **JSON API**: Datos en archivos JSON estáticos (no DB)
+3. **CDN Ready**: Archivos estáticos servidos desde CDN
+4. **No Server Runtime**: Solo API de build, sin server dinámico
+
+## 5. Acceptance Criteria
+
+- [ ] 3 páginas funcionales con navegación
+- [ ] Datos cargados desde JSON simulado
+- [ ] Pre-renderizado working (SSG)
+- [ ] Diseño responsive en mobile/tablet/desktop
+- [ ] Buscador funcional en páginas de sitios
+- [ ] Mapa Leaflet visible con marcadores
+- [ ] Formulario de contacto con validación
+- [ ] Estructura de carpetas correcta
+- [ ] README con explicación JAMstack
+- [ ] Deploy ready para Vercel

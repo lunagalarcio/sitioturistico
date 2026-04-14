@@ -1,0 +1,123 @@
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.tag.natural {
+  background: rgba(149, 213, 178, 0.9);
+  color: var(--color-dark-green);
+}
+
+.tag.cultural {
+  background: rgba(212, 163, 115, 0.9);
+  color: var(--color-dark-green);
+}
+
+.tag.historico {
+  background: rgba(116, 198, 157, 0.9);
+  color: var(--color-dark-green);
+}
+
+.content {
+  padding: var(--spacing-md);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: var(--spacing-sm);
+}
+
+.locationIcon {
+  font-size: 1rem;
+}
+
+.cta {
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid #eee;
+}
+
+.moreInfo {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  transition: color var(--transition-fast);
+}
+
+.card:hover .moreInfo {
+  color: var(--color-primary);
+}
+
+@media (max-width: 480px) {
+  .imageWrapper {
+    height: 180px;
+  }
+  
+  .content {
+    padding: var(--spacing-sm);
+  }
+  
+  .title {
+    font-size: 1.1rem;
+  }
+}

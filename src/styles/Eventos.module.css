@@ -1,0 +1,103 @@
+.content {
+  background: var(--color-background);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: var(--spacing-xl);
+  padding: 8px;
+  background: var(--color-white);
+  border-radius: 40px;
+  box-shadow: var(--shadow-sm);
+  width: fit-content;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.tab {
+  padding: 14px 32px;
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.tab:hover {
+  color: var(--color-primary);
+}
+
+.tab.active {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionHeader h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.sectionHeader p {
+  color: #666;
+}
+
+.eventsSection,
+.gastronomiaSection {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gastroPart {
+  margin-bottom: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid #eee;
+}
+
+.gastroPart:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--spacing-xxl);
+}
+
+.noResults span {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.noResults h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.noResults p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    width: 100%;
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+  }
+  
+  .tab {
+    text-align: center;
+  }
+}

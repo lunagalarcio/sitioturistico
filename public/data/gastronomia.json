@@ -1,0 +1,112 @@
+{
+  "gastronomia": [
+    {
+      "id": 1,
+      "nombre": "La Posada de Las Americas",
+      "tipo": "restaurante",
+      "especialidad": "Gastronomía mexicana contemporánea con ingredientes locales",
+      "direccion": "Calle Mesones #80, Centro",
+      "telefono": "415 152 4000",
+      "horario": "13:00 - 22:00 hrs",
+      "precio": "$$$",
+      "imagen": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "nombre": "El Pegaso",
+      "tipo": "restaurante",
+      "especialidad": "Carnitas típicas y pozole tradicional",
+      "direccion": "Calle Correo #32, Centro",
+      "telefono": "415 152 2020",
+      "horario": "8:00 - 20:00 hrs",
+      "precio": "$",
+      "imagen": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+      "rating": 4.3
+    },
+    {
+      "id": 3,
+      "nombre": "L成熟的 Art Café",
+      "tipo": "restaurante",
+      "especialidad": "Café de especialidad y repostería artesanal en ambiente bohemio",
+      "direccion": "Calle Hernandez #10, Centro",
+      "telefono": "415 152 8080",
+      "horario": "9:00 - 21:00 hrs",
+      "precio": "$$",
+      "imagen": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "nombre": "San Miguelito Taquería",
+      "tipo": "restaurante",
+      "especialidad": "Tacos al pastor y carne asada de primera calidad",
+      "direccion": "Av. Revolución #145",
+      "telefono": "415 152 3030",
+      "horario": "18:00 - 02:00 hrs",
+      "precio": "$",
+      "imagen": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+      "rating": 4.4
+    },
+    {
+      "id": 5,
+      "nombre": "Mole, Mole y Más Mole",
+      "tipo": "restaurante",
+      "especialidad": "Variedades de mole guanajuatense, el tradicional negocio familiar",
+      "direccion": "Calle Cuitláhuac #12",
+      "telefono": "415 152 5050",
+      "horario": "12:00 - 21:00 hrs",
+      "precio": "$$",
+      "imagen": "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?w=800",
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "nombre": "Churrería San Miguel",
+      "tipo": "restaurante",
+      "especialidad": "Churros artesanales y chocolate caliente español",
+      "direccion": "Plaza Principal #8",
+      "telefono": "415 152 6060",
+      "horario": "8:00 - 22:00 hrs",
+      "precio": "$",
+      "imagen": "https://images.unsplash.com/photo-1624371414361-e670edf4898e?w=800",
+      "rating": 4.8
+    },
+    {
+      "id": 7,
+      "nombre": "Enchiladas Mineras",
+      "tipo": "plato",
+      "especialidad": "Enchiladas mineras - tortilla de maíz rellena de pollo, bañadas en chile guajillo con queso fundido",
+      "precio": "$",
+      "ingredientes": "Tortilla de maíz, pollo, chile guajillo, queso fresco, crema, cebolla",
+      "restaurante": "El Pegaso"
+    },
+    {
+      "id": 8,
+      "nombre": "Caldillo de Date",
+      "tipo": "plato",
+      "especialidad": "Caldillo de date - густой томатный суп с говядиной и картофелем, традиционное блюдо штата",
+      "precio": "$$",
+      "ingredientes": "Говядина, помидоры, картофель, специи, кинза",
+      "restaurante": "La Posada de Las Americas"
+    },
+    {
+      "id": 9,
+      "nombre": "Churrasco Sanmiguelense",
+      "tipo": "plato",
+      "especialidad": "Традиционное барбекю из говядины с овощами гриль и лепешками",
+      "precio": "$$$",
+      "ingredientes": "Говядина, перец, лук, кукурузные лепешки, сальса",
+      "restaurante": "San Miguelito Taquería"
+    },
+    {
+      "id": 10,
+      "nombre": "Flan de Nuez",
+      "tipo": "postre",
+      "especialidad": "Традиционный десерт из карамелизированной нуги с грецкими орехами",
+      "precio": "$",
+      "ingredientes": "Молоко, яйца, сахар, грецкие орехи, ваниль",
+      "restaurante": "Churrería San Miguel"
+    }
+  ]
+}
