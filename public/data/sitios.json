@@ -1,0 +1,108 @@
+{
+  "municipio": {
+    "nombre": "San Miguel de Allende",
+    "estado": "Guanajuato",
+    "poblacion": 160483,
+    "extension": "1,517 km²",
+    "fundacion": "1542",
+    "lema": "Patria, Religión y Trabajo"
+  },
+  "sitios": [
+    {
+      "id": 1,
+      "nombre": "Parroquia de San Miguel Arcángel",
+      "descripcion": "Icono arquitectónico del municipio, esta iglesia neogótica fue construida en el siglo XIX y es conocida por su fachada color rosa que domina el Jardín Principal.",
+      "categoria": "cultural",
+      "imagen": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=800",
+      "ubicacion": "Centro Histórico",
+      "lat": 20.9153,
+      "lng": -100.7436,
+      "horario": "7:00 - 20:00 hrs",
+      "telefono": "415 152 0000"
+    },
+    {
+      "id": 2,
+      "nombre": "El Charco del Ingenio",
+      "descripcion": "Jardín botánico y reserva natural que alberga una gran diversidad de flora nativa del Bajío. Senderos rodeados de cactus y plantas suculentas.",
+      "categoria": "natural",
+      "imagen": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "ubicacion": "Carretera a Dolores Hidalgo Km 3",
+      "lat": 20.9285,
+      "lng": -100.7289,
+      "horario": "9:00 - 18:00 hrs",
+      "telefono": "415 152 1234"
+    },
+    {
+      "id": 3,
+      "nombre": "Mercado Ignacio Ramírez",
+      "descripcion": "Mercado tradicional donde puedes encontrar artesanías locales, productos orgánicos y gastronomía típica del estado de Guanajuato.",
+      "categoria": "cultural",
+      "imagen": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800",
+      "ubicacion": "Calle Reloj #50, Centro",
+      "lat": 20.9145,
+      "lng": -100.7415,
+      "horario": "7:00 - 21:00 hrs",
+      "telefono": "415 152 5678"
+    },
+    {
+      "id": 4,
+      "nombre": "Fábrica de La Aurora",
+      "descripcion": "Antigua fábrica de textiles convertida en centro de arte y diseño con galerías, estudios de artistas y restaurantes gourmet.",
+      "categoria": "cultural",
+      "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+      "ubicacion": "Calle San Francisco #35",
+      "lat": 20.9120,
+      "lng": -100.7380,
+      "horario": "10:00 - 19:00 hrs",
+      "telefono": "415 152 9012"
+    },
+    {
+      "id": 5,
+      "nombre": "Mirador El Picacho",
+      "descripcion": "Punto panorámico elevado que ofrece vistas espectaculares de toda la ciudad y sus alrededores. Ideal para fotografía de atardecer.",
+      "categoria": "natural",
+      "imagen": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+      "ubicacion": "Carretera a Dolores Hidalgo",
+      "lat": 20.9350,
+      "lng": -100.7200,
+      "horario": "24 horas",
+      "telefono": "N/A"
+    },
+    {
+      "id": 6,
+      "nombre": "Casa de Allende",
+      "descripcion": "Museo histórico dedicado a Ignacio Allende, héroe de la independencia mexicana. La casa original data del siglo XVIII.",
+      "categoria": "historico",
+      "imagen": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800",
+      "ubicacion": "Calle Hone #1, Centro",
+      "lat": 20.9138,
+      "lng": -100.7428,
+      "horario": "9:00 - 18:00 hrs",
+      "telefono": "415 152 3456"
+    },
+    {
+      "id": 7,
+      "nombre": "Parque Benito Juárez",
+      "descripcion": "El parque más grande de la ciudad con lagos artificiales, senderos, área de juegos y un zoológico pequeño.",
+      "categoria": "natural",
+      "imagen": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
+      "ubicacion": "Blvd. Mauricio Magdaleno",
+      "lat": 20.9050,
+      "lng": -100.7550,
+      "horario": "6:00 - 20:00 hrs",
+      "telefono": "415 152 7890"
+    },
+    {
+      "id": 8,
+      "nombre": "Templo de la Inmaculada Concepción",
+      "descripcion": "Hermoso ejemplo de arquitectura barroca colonial con una impresionante fachada de cantera rosa.",
+      "categoria": "historico",
+      "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+      "ubicacion": "Plaza de la Constitución",
+      "lat": 20.9160,
+      "lng": -100.7440,
+      "horario": "8:00 - 19:00 hrs",
+      "telefono": "415 152 1111"
+    }
+  ]
+}

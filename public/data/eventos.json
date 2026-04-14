@@ -1,0 +1,70 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "Festival Cultural San Miguel",
+      "descripcion": "El evento más importante del año con presentaciones de música, teatro, danza y arte en espacios públicos y privados de la ciudad.",
+      "fecha": "2026-04-20",
+      "hora": "18:00",
+      "categoria": "cultural",
+      "ubicacion": "Centro Histórico",
+      "imagen": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800",
+      "precio": "Gratis"
+    },
+    {
+      "id": 2,
+      "titulo": "Noche de Rábanos",
+      "descripcion": "Tradicional competencia de tallado de rábanos que atrae a miles de visitantes. Incluye أيضاً competencias de flores yuca y arena.",
+      "fecha": "2026-12-23",
+      "hora": "10:00",
+      "categoria": "tradicional",
+      "ubicacion": "Plaza Principal",
+      "imagen": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800",
+      "precio": "Gratis"
+    },
+    {
+      "id": 3,
+      "titulo": "Semana Santa",
+      "descripcion": "Celebraciones religiosas con procesiones, representaciones de la pasión de Cristo y tradiciones ancestrales.",
+      "fecha": "2026-04-10",
+      "hora": "09:00",
+      "categoria": "religioso",
+      "ubicacion": "Varias ubicaciones",
+      "imagen": "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=800",
+      "precio": "Gratis"
+    },
+    {
+      "id": 4,
+      "titulo": "Mercado de Artesanos",
+      "descripcion": "Exposición y venta de artesanías tradicionales de la región, incluyendo textiles, cerámica, cuero y jewelry.",
+      "fecha": "2026-04-25",
+      "hora": "10:00",
+      "categoria": "artesania",
+      "ubicacion": "Fábrica de La Aurora",
+      "imagen": "https://images.unsplash.com/photo-1459909633680-206dc5c67abb?w=800",
+      "precio": "Entrada libre"
+    },
+    {
+      "id": 5,
+      "titulo": "Festival de Cine Indie",
+      "descripcion": "Proyección de películas independientes nacionales e internacionales con la participación de directores y actores.",
+      "fecha": "2026-05-15",
+      "hora": "16:00",
+      "categoria": "cine",
+      "ubicacion": "Cine Teatro Ángela Peralta",
+      "imagen": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
+      "precio": "$80 - $150"
+    },
+    {
+      "id": 6,
+      "titulo": "Guanajuato y sus Carnavales",
+      "descripcion": "Desfiles de carrozas, música y disfraces en el Carnaval más grande del estado.",
+      "fecha": "2026-02-14",
+      "hora": "12:00",
+      "categoria": "cultural",
+      "ubicacion": "Boulevard Miguel de la Santiago",
+      "imagen": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800",
+      "precio": "Gratis"
+    }
+  ]
+}
