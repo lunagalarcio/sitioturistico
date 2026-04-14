@@ -178,13 +178,13 @@ npm run start
 
 ## Funcionalidades Implementadas
 
-- ✅ Buscador en tiempo real con filtro
-- ✅ Filtros por categoría (Natural, Cultural, Histórico)
-- ✅ Mapa interactivo con Leaflet
-- ✅ Formulario de contacto con validación
-- ✅ Diseño responsive con CSS moderno
-- ✅ Pre-renderizado con SSG/ISR
-- ✅ Navegación con Next.js Router
+- Buscador en tiempo real con filtro
+- Filtros por categoría (Natural, Cultural, Histórico)
+- Mapa interactivo con Leaflet
+- Formulario de contacto con validación
+- Diseño responsive con CSS moderno
+- Pre-renderizado con SSG/ISR
+- Navegación con Next.js Router
 
 ## Contenido de Datos
 
