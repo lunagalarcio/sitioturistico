@@ -1,4 +1,4 @@
-# Portal Turístico Municipal - Turismo San Miguel de Allende
+# Portal Turístico
 
 Un portal turístico desarrollado con arquitectura JAMstack utilizando Next.js, que presenta los atractivos, eventos y gastronomía del municipio de San Miguel de Allende, Guanajuato, México.
 
