@@ -50,8 +50,8 @@ export default function EventosPage({ eventos, gastronomia }: EventosPageProps) 
   return (
     <>
       <Head>
-        <title>Eventos y Gastronomía - San Miguel de Allende</title>
-        <meta name="description" content="Descubre eventos culturales y la gastronomía de San Miguel de Allende." />
+        <title>Eventos y Gastronomía - Girón</title>
+        <meta name="description" content="Descubre eventos culturales y la gastronomía de Girón." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -69,13 +69,13 @@ export default function EventosPage({ eventos, gastronomia }: EventosPageProps) 
               className={`${styles.tab} ${activeTab === 'eventos' ? styles.active : ''}`}
               onClick={() => setActiveTab('eventos')}
             >
-              🎭 Eventos
+              Eventos
             </button>
             <button 
               className={`${styles.tab} ${activeTab === 'gastronomia' ? styles.active : ''}`}
               onClick={() => setActiveTab('gastronomia')}
             >
-              🍽️ Gastronomía
+              Gastronomía
             </button>
           </div>
 
@@ -94,7 +94,7 @@ export default function EventosPage({ eventos, gastronomia }: EventosPageProps) 
                 </div>
               ) : (
                 <div className={styles.noResults}>
-                  <span>📅</span>
+                  <span></span>
                   <h3>No hay eventos próximos</h3>
                   <p>Revisa pronto las nuevas programaciones</p>
                 </div>

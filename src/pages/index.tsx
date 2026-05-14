@@ -1,11 +1,11 @@
-import { GetStaticProps } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import Hero from '@/components/Hero';
-import TouristSiteCard from '@/components/TouristSiteCard';
-import ContactForm from '@/components/ContactForm';
-import { getSitios, getMunicipio } from '@/lib/data';
-import styles from '@/styles/Home.module.css';
+import { GetStaticProps } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import Hero from "@/components/Hero";
+import TouristSiteCard from "@/components/TouristSiteCard";
+import ContactForm from "@/components/ContactForm";
+import { getSitios, getMunicipio } from "@/lib/data";
+import styles from "@/styles/Home.module.css";
 
 interface HomeProps {
   municipio: {
@@ -32,26 +32,30 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Turismo San Miguel de Allende - Descubre la Magia</title>
-        <meta name="description" content={`Visit ${municipio.nombre}, ${municipio.estado}. Historia, cultura y naturaleza te esperan.`} />
+        <title>Turismo - Descubre la Magia</title>
+        <meta
+          name="description"
+          content={`Visit ${municipio.nombre}, ${municipio.estado}. Historia, cultura y naturaleza te esperan.`}
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <Hero
         subtitle={`Bienvenido a ${municipio.nombre}`}
-        title="Descubre la Magia del Bajío"
-        description="Un destino que combina arquitectura colonial, arte contemporáneo y paisajes naturales únicos. Vive una experiencia inigualable."
+        title="Descubre la Magia del lugar"
+        description="Un destino que combina arquitectura colonial y arte contemporáneo. Vive una experiencia inigualable."
       />
 
       <section className={styles.stats}>
         <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>🏛️</span>
               <span className={styles.statLabel}>Ciudad Colonial</span>
             </div>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>{municipio.poblacion.toLocaleString()}+</span>
+              <span className={styles.statNumber}>
+                {municipio.poblacion.toLocaleString()}+
+              </span>
               <span className={styles.statLabel}>Habitantes</span>
             </div>
             <div className={styles.statItem}>
@@ -74,22 +78,26 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
               <h2>{municipio.nombre}</h2>
               <p className={styles.lema}>"{municipio.lema}"</p>
               <p>
-                San Miguel de Allende es una ciudad colonial ubicada en el corazón del estado de Guanajuato. 
-                Fundada en 1542, ha preservado su riqueza arquitectónica y tradición cultural a través de los siglos.
+                Girón es un municipio colonial ubicado en el departamento de
+                Santander, Colombia. Fundado en 1631, conserva su riqueza
+                histórica, arquitectura tradicional y esencia cultural a través
+                del tiempo.
               </p>
+
               <p>
-                Hoy es reconocido como uno de los destinos turísticos más importantes de México, 
-               -atrayendo visitantes de todo el mundo con su arquitectura neogótica, calles empedradas 
-                y una escena artística vibrante.
+                Hoy es reconocido como uno de los destinos patrimoniales más
+                importantes de Santander, atrayendo visitantes con sus calles
+                empedradas, casas blancas, templos históricos y un ambiente
+                lleno de tradición y encanto colonial.
               </p>
               <Link href="/sitios" className="btn btn-primary">
                 Explorar Sitios Turísticos
               </Link>
             </div>
             <div className={styles.aboutImage}>
-              <img 
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" 
-                alt="San Miguel de Allende"
+              <img
+                src="https://i.pinimg.com/1200x/f3/ad/28/f3ad2818c7d80682a0a2a6121349c573.jpg"
+                alt="Girón, Santander"
               />
             </div>
           </div>
@@ -103,13 +111,13 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
             <h2>Lugares Imperdibles</h2>
             <p>Descubre los sitios másHermosos de nuestra ciudad</p>
           </div>
-          
+
           <div className="grid grid-3">
-            {sitiosDestacados.map(sitio => (
+            {sitiosDestacados.map((sitio) => (
               <TouristSiteCard key={sitio.id} sitio={sitio} />
             ))}
           </div>
-          
+
           <div className={styles.viewAll}>
             <Link href="/sitios" className="btn btn-outline">
               Ver Todos los Sitios →
@@ -123,8 +131,9 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
           <div className={styles.ctaContent}>
             <h2>¿Listo para Visitarnos?</h2>
             <p>
-              Planifica tu viaje y descubre todo lo que San Miguel de Allende tiene para ofrecerte.
-              Desde su centro histórico hasta sus paisajes naturales, hay algo para todos.
+              Planifica tu viaje y descubre todo lo que Girón
+              tiene para ofrecerte. Desde su centro histórico hasta sus paisajes
+              naturales, hay algo para todos.
             </p>
             <div className={styles.ctaButtons}>
               <Link href="/sitios" className="btn btn-primary">
@@ -145,30 +154,31 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
               <span className={styles.sectionTag}>Contáctanos</span>
               <h2>¿Tienes preguntas?</h2>
               <p>
-                Estamos aquí para ayudarte a planificar tu visita a San Miguel de Allende. 
-                Contáctanos para obtener más información sobre sitios turísticos, eventos y servicios.
+                Estamos aquí para ayudarte a planificar tu visita a Girón.
+                Contáctanos para obtener más información sobre
+                sitios turísticos, eventos y servicios.
               </p>
-              
+
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
-                  <span>📍</span>
-                  <span>Centro Histórico, San Miguel de Allende, Gto.</span>
+                  <span></span>
+                  <span>Centro Histórico, Girón, Santander</span>
                 </div>
                 <div className={styles.contactItem}>
-                  <span>📞</span>
+                  <span></span>
                   <span>(415) 152 0000</span>
                 </div>
                 <div className={styles.contactItem}>
-                  <span>✉️</span>
+                  <span></span>
                   <span>turismo@sma.gob.mx</span>
                 </div>
                 <div className={styles.contactItem}>
-                  <span>🕐</span>
+                  <span></span>
                   <span>Lunes a Viernes: 9:00 - 18:00</span>
                 </div>
               </div>
             </div>
-            
+
             <div className={styles.contactForm}>
               <ContactForm />
             </div>
@@ -182,14 +192,14 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const municipio = await getMunicipio();
   const todosSitios = await getSitios();
-  
+
   const sitiosDestacados = todosSitios.slice(0, 3);
 
   return {
     props: {
       municipio,
-      sitiosDestacados
+      sitiosDestacados,
     },
-    revalidate: 60
+    revalidate: 60,
   };
 };

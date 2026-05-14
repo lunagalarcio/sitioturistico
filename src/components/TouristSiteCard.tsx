@@ -44,7 +44,7 @@ export default function TouristSiteCard({ sitio }: TouristSiteCardProps) {
         <p className={styles.description}>{sitio.descripcion}</p>
         
         <div className={styles.location}>
-          <span className={styles.locationIcon}>📍</span>
+          <span className={styles.locationIcon}></span>
           <span>{sitio.ubicacion}</span>
         </div>
         

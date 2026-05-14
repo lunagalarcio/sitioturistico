@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch, placeholder = 'Buscar...' }: Searc
 
   return (
     <div className={styles.searchBar}>
-      <span className={styles.icon}>🔍</span>
+      <span className={styles.icon}></span>
       <input
         type="text"
         value={query}
