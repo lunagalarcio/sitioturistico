@@ -1,6 +1,6 @@
 # Portal Turístico
 
-Un portal turístico desarrollado con arquitectura JAMstack utilizando Next.js, que presenta los atractivos, eventos y gastronomía del municipio de San Miguel de Allende, Guanajuato, México.
+Un portal turístico desarrollado con arquitectura JAMstack utilizando Next.js, que presenta los atractivos, eventos y gastronomía del municipio de Girón, Santander.
 
 ## Arquitectura JAMstack
 
@@ -46,7 +46,7 @@ Usuario (CDN)
 
 2. **Sitios Turísticos** (`/sitios`)
    - Listado con búsqueda en tiempo real
-   - Filtro por categoría (Natural, Cultural, Histórico)
+   - Filtro por categoría (Cultural e Histórico)
    - Mapa interactivo con Leaflet
    - Pre-renderizado de categorías
 

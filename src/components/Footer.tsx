@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 interface FooterProps {
   municipio?: {
@@ -16,11 +17,11 @@ export default function Footer({ municipio }: FooterProps) {
         <div className={styles.grid}>
           <div className={styles.section}>
             <h3 className={styles.logo}>
-              <span></span> Girón tour
+            Girón tour
             </h3>
             <p className={styles.description}>
-              Descubre la magia de San Miguel de Allende. Un destino que combina
-              historia, cultura y naturaleza.
+              Descubre la magia de Girón. Un destino que combina historia y
+              cultura.
             </p>
           </div>
 
@@ -39,7 +40,7 @@ export default function Footer({ municipio }: FooterProps) {
             <div className={styles.contact}>
               <p>Centro Histórico</p>
               <p>(415) 152 0000</p>
-              <p>turismo@sma.gob.mx</p>
+              <p>turismo@giron.gob.co</p>
               <p>Lun - Vie: 9:00 - 18:00</p>
             </div>
           </div>
@@ -51,22 +52,30 @@ export default function Footer({ municipio }: FooterProps) {
                 href="#"
                 className={styles.socialLink}
                 aria-label="Facebook"
-              ></a>
+              >
+                <FaFacebookF />
+              </a>
               <a
                 href="#"
                 className={styles.socialLink}
                 aria-label="Instagram"
-              ></a>
+              >
+                <FaInstagram />
+              </a>
               <a
                 href="#"
                 className={styles.socialLink}
                 aria-label="Twitter"
-              ></a>
+              >
+                <FaTwitter />
+              </a>
               <a
                 href="#"
                 className={styles.socialLink}
                 aria-label="YouTube"
-              ></a>
+              >
+                <FaYoutube />
+              </a>
             </div>
           </div>
         </div>

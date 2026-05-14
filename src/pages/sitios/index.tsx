@@ -40,9 +40,9 @@ export default function SitiosPage({ sitios, categorias }: SitiosPageProps) {
 
   const getCategoryLabel = (categoria: string) => {
     const labels: Record<string, string> = {
-      natural: 'Natural',
       cultural: 'Cultural',
-      historico: 'Histórico'
+      historico: 'Histórico',
+      religioso: 'Religioso'
     };
     return labels[categoria] || categoria;
   };
@@ -92,7 +92,7 @@ export default function SitiosPage({ sitios, categorias }: SitiosPageProps) {
               className={styles.mapToggle}
               onClick={() => setShowMap(!showMap)}
             >
-              {showMap ? '📷 Ver Tarjetas' : '🗺️ Ver Mapa'}
+              {showMap ? 'Ver Tarjetas' : 'Ver Mapa'}
             </button>
           </div>
 
@@ -132,7 +132,7 @@ export default function SitiosPage({ sitios, categorias }: SitiosPageProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const sitios = await getSitios();
-  const categorias = ['natural', 'cultural', 'historico'];
+  const categorias = ['cultural', 'historico', 'religioso'];
 
   return {
     props: {

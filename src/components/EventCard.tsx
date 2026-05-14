@@ -83,18 +83,18 @@ export default function EventCard({ evento, type = 'evento' }: EventCardProps) {
           
           {gastro.direccion && (
             <div className={styles.location}>
-              <span className={styles.locationIcon}>📍</span>
+              <span className={styles.locationIcon}></span>
               <span>{gastro.direccion}</span>
             </div>
           )}
           
           <div className={styles.meta}>
-            <span className={styles.price}>💰 {gastro.precio}</span>
+            <span className={styles.price}>{gastro.precio}</span>
             {gastro.rating && (
-              <span className={styles.rating}>⭐ {gastro.rating}</span>
+              <span className={styles.rating}>{gastro.rating}</span>
             )}
             {gastro.horario && (
-              <span className={styles.time}>🕐 {gastro.horario}</span>
+              <span className={styles.time}>{gastro.horario}</span>
             )}
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function EventCard({ evento, type = 'evento' }: EventCardProps) {
         <div className={styles.dateBadge}>
           <span className={styles.dateDay}>{new Date(ev.fecha).getDate()}</span>
           <span className={styles.dateMonth}>
-            {new Date(ev.fecha).toLocaleDateString('es-MX', { month: 'short' })}
+            {new Date(ev.fecha).toLocaleDateString('es-CO', { month: 'short' })}
           </span>
         </div>
         
@@ -132,13 +132,13 @@ export default function EventCard({ evento, type = 'evento' }: EventCardProps) {
         <p className={styles.description}>{ev.descripcion}</p>
         
         <div className={styles.location}>
-          <span className={styles.locationIcon}>📍</span>
+          <span className={styles.locationIcon}></span>
           <span>{ev.ubicacion}</span>
         </div>
         
         <div className={styles.meta}>
-          <span className={styles.time}>🕐 {ev.hora}</span>
-          <span className={styles.price}>💰 {ev.precio}</span>
+          <span className={styles.time}>{ev.hora}</span>
+          <span className={styles.price}>{ev.precio}</span>
         </div>
       </div>
     </article>

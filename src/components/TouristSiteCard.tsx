@@ -17,7 +17,6 @@ interface TouristSiteCardProps {
 export default function TouristSiteCard({ sitio }: TouristSiteCardProps) {
   const getCategoryLabel = (categoria: string) => {
     const labels: Record<string, string> = {
-      natural: 'Natural',
       cultural: 'Cultural',
       historico: 'Histórico'
     };

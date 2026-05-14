@@ -75,7 +75,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   if (isSubmitted) {
     return (
       <div className={styles.success}>
-        <div className={styles.successIcon}>✅</div>
+        <div className={styles.successIcon}></div>
         <h3>¡Mensaje Enviado!</h3>
         <p>Gracias por contactarnos. Te responderemos pronto.</p>
         <button 

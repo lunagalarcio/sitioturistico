@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoText}>Tour Girón</span>
+          <span className={styles.logoText}>Girón Tour</span>
         </Link>
         
         <div className={styles.navLinks}>

@@ -35,7 +35,7 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
         <title>Turismo - Descubre la Magia</title>
         <meta
           name="description"
-          content={`Visit ${municipio.nombre}, ${municipio.estado}. Historia, cultura y naturaleza te esperan.`}
+          content={`Visit ${municipio.nombre}, ${municipio.estado}. Historia y cultura te esperan.`}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -50,7 +50,8 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
         <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <span className={styles.statLabel}>Ciudad Colonial</span>
+              <span className={styles.statNumber}>Girón</span>
+              <span className={styles.statLabel}>Santander</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>
@@ -60,11 +61,11 @@ export default function Home({ municipio, sitiosDestacados }: HomeProps) {
             </div>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>{municipio.extension}</span>
-              <span className={styles.statLabel}>Extensión</span>
+              <span className={styles.statLabel}>de extensión</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statNumber}>{municipio.fundacion}</span>
-              <span className={styles.statLabel}>Fundación</span>
+              <span className={styles.statLabel}>Colombia</span>
             </div>
           </div>
         </div>
